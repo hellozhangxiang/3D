@@ -1,0 +1,10 @@
+	article{
+		background:url(../images/footer_bg1.png);
+		margin:0 auto;
+		}
+	article p{
+		color:white;
+		padding:20px;
+		margin:0 auto;
+		text-align:center;
+	}

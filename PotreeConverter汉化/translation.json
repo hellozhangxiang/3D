@@ -1,0 +1,76 @@
+{
+    "tb": {
+        "navigation_opt": "视图工具",
+        "rendering_opt": "外观",
+        "tools_opt": "工具",
+        "measurments_opt": "测定结果导出",
+        "annotations_opt": "注记",
+        "materials_opt": "Materials",
+        "scene_opt": "场景",
+        "classification_filter_opt": "分类",
+        "parameters_opt": "其他设置",
+        "about_opt": "关于我们"
+    },
+    "tt": {
+        "angle_measurement": "角度测量",
+        "point_measurement": "点测量",
+        "distance_measurement": "距离测量",
+        "height_measurement": "高度测量",
+        "area_measurement": "面积测量",
+        "volume_measurement": "体积测量",
+        "height_profile": "等高线",
+        "clip_volume": "体积测量夹",
+        "remove_all_measurement": "取消所有测量",
+        "left_view_control": "左视图",
+        "front_view_control": "主视图",
+        "top_view_control": "俯视图",
+        "focus_control": "聚集",
+        "orbit_control": "旋绕",
+        "flight_control": "飞行视角",
+        "earth_control": "球体视角"
+    },
+    "appearance": {
+        "nb_max_pts": "预览点数", 
+        "point_size": "点大小",
+        "point_opacity": "透明度",
+        "field_view": "视场角",
+        "point_size_type": "点样式",
+        "point_material": "Materials",
+        "elevation_range": "仰角范围",
+        "point_quality": "Quality",
+        "point_shape": "点形状",
+        "edl_radius": "边框倒角",
+        "edl_strength": "边框亮度",
+        "edl_enable": "激活边框",
+        "min_node_size": "最小节点尺寸",
+        "clip_mode": "修剪样式",
+        "move_speed": "视图比例尺",
+        "skybox": "Sky",
+        "bottom_lock": "Keep above ground",
+        "box": "包围盒",
+        "length_unit": "测量单位",
+        "freeze": "锁定视图",
+        "language": "Language"
+    },
+	"measurements": {
+		"clip": "clip",
+		"show": "show volume"
+	},
+	"annotations": {
+		"show3D": "3D显示",
+		"showMap": "显示在地图"
+    }, 
+	"profile": {
+        "nb_points": "Number of Points",
+        "title": "Height profile",
+        "save_las": "Save LAS(3D)",
+        "save_ortho": "Save CSV(2D)"
+    },
+	"scene": {
+		"camera_position": "视点位置",
+		"camera_target": "目标点"
+	},
+    "settings": {
+        "language": "Language"
+    }
+}

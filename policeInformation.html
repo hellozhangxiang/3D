@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>警员信息</title>
+  <style>
+	ul,li{
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+	}
+	div>ul>li{
+		float:left;
+	}
+	ul>li>ul{
+		list-style:none;
+		text-align:center;
+	}
+	ul>li>ul>li{
+		border:1px solid black;
+		padding:1.6em;
+		margin:0;
+	}
+	ul>li>ul>li:first-child{
+		font-size:1.2em;
+		font-weight:700;
+	}
+	button{
+		margin:2em 1em;
+	}
+	div>ul{
+		margin-left:1em;
+	}
+	.row>div{
+		padding:0;
+	}
+	.row>div>div{
+		padding-left:1em;
+	}
+	ul.findUser>li{
+		margin-left:2em;
+	}
+	ul.clearFloat::after,ul.clearFloat::before{
+    content: "";
+    height:0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.userList{
+	margin-bottom:5%;
+}
+.userList>a{
+	display:inline-block;
+	padding:1em;
+	width:5em;
+	text-align:center;
+	background:red;
+	margin:3em 1em;
+	border-radius:3px;
+}
+.userList>a.firstPage{
+	margin-left:40%;
+}
+.leftTitle{
+	text-align:center;
+	padding:.5em 0;
+	font-size:1.1em;
+	cursor:pointer;
+	border-radius:2px;
+	background: -moz-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+    background: -webkit-linear-gradient(top, #A2ADAD 0%, #2D3C43 100%);
+    background: -o-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+    background: -ms-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+}
+.leftTitle:hover{
+	background: -moz-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+    background: -webkit-linear-gradient(top, #eff0f0  0%, #2D3C43 100%);
+    background: -o-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+    background: -ms-linear-gradient(top, #eff0f0 0%, #2D3C43 100%);
+}
+.rightContent{
+	overflow:hidden;
+	background:#F6F6F6;
+}
+.rightContent:nth-child(2)>div{
+	background:white;
+}
+.rightContent h3{
+	margin:.5em 1em;
+	box-shadow:0px 3px 0px 0px #aaa;
+	font-weight:550;
+	padding-bottom:.5em;
+}
+.rightContent:nth-child(2) div{
+	box-shadow:0px 0px 1px 1px #aaa inset;
+	text-align:center;
+	padding:2em;
+}
+.rightContent span{
+	font-size:1.1em;
+	font-weight:550;
+	display:inline-block;
+	margin-bottom:1em;
+}
+.rightContent p{
+	font-size:1.2em;
+	color:#218EB9;
+}
+.rightContent>div:nth-child(2) p{
+	color:#01D867;
+}
+.rightContent>div:nth-child(3) p{
+	color:#B91C1C;
+}
+  </style>
+ </head>
+ <body>
+ 	<header>
+		<div class="container" style="width:100%;">
+			<div class="row"  style="font-size:1.3em;color:white;">
+				<div class="col-sm-3" style="background:#3780A9;padding:.7em;">三维实景可视化管理系统控制台</div>
+				<div class="col-sm-9" style="background:#3C8DBC;padding:.7em;">
+					<a class="glyphicon glyphicon-align-justify" style="color:white"></a>
+					<span style="float:right; font-size:0.8em;margin-right:3em;">超级管理员</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<body>
+		<div class="container" style="width:100%;height:100%">
+			<div class="row">
+				<div class="col-sm-3" style="background:#232C31;color:white;min-height:900px;">
+					<div style="background:#2D3C43;">
+						<!--img src=""-->
+						<p style="text-align:center;padding:1em 0;"><img src="images/1.jpg" class="img-circle">用户名称</p>
+					</div>
+					<!--div style="background:#2D3C43;margin:1em 0;">
+						<div><input type="text"><span class="glyphicon glyphicon-search"></span></div>
+					</div-->
+					<div  class="leftTitle">基本情况</div>
+					<div  class="leftTitle">用户管理</div>
+					<div  class="leftTitle">角色管理</div>
+					<div  class="leftTitle">数据管理</div>
+					<div  class="leftTitle">用户留言</div>
+				</div>
+				<div class="col-sm-9" style="overflow:hidden;">
+					<div class="row rightContent">
+						<div class="col-sm-12" style=""><h3>基本信息统计:</h3></div>
+					</div>
+					<div class="row rightContent">
+						<div class="col-sm-4" style="font-size:1.2em;">
+							<span>用户</span>
+							<p>123456789位</p>
+						</div>
+						<div class="col-sm-4" style="font-size:1.2em;">
+							<span>数据(案例)</span>
+							<p>123456789条</p>
+						</div>
+						<div class="col-sm-4" style="font-size:1.2em;">
+							<span>留言</span>
+							<p>123456789条</p>
+						</div>
+					</div>
+					<div class="row rightContent">
+						<div class="col-sm-12">
+							<h3>数据(案例)分类统计:</h3>
+						</div>
+					</div>
+					<div id="box" style="width:80%;height:400px;"></div>
+					<!--div style="background:#EEEFF4;padding:.5em;margin:.5em 0;border-radius:3px;">
+						<h2>用户管理</h2>
+						
+					</div>
+					<hr/>
+					<div>
+						<h3>用户查询</h3>
+						<ul class="clearFloat findUser">
+							<li>
+								<h4>用户名</h4>
+								<input type="text">
+							</li>
+							<li>
+								<h4>姓名</h4>
+								<input type="text">
+							</li>
+							<li>
+								<h4>其他</h4>
+								<input type="text">
+							</li>
+							<li>
+								<br/>
+								<button>查询</button>
+							</li>
+						</ul>
+						
+					</div>
+					<hr/>
+					<div>
+						<h3>用户列表</h3>
+						<div>
+							<button><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;新增用户</button>
+							
+							<button>功能2</button>
+							<button>功能3</button>
+						</div>
+						<div class="userList">
+							<ul style="list-style:none;" class="clearFloat">
+								<li>
+									<ul>
+										<li>序号</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>用户名</li>
+										<li>a</li>
+										<li>b</li>
+										<li>c</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>姓名</li>
+										<li>甲</li>
+										<li>乙</li>
+										<li>丙</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>部门</li>
+										<li>部门1</li>
+										<li>部门2</li>
+										<li>部门3</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>职务</li>
+										<li>职务1</li>
+										<li>职务2</li>
+										<li>职务3</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>1111</li>
+										<li>11111</li>
+										<li>11111</li>
+										<li>11111</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>22222</li>
+										<li>22222</li>
+										<li>22222</li>
+										<li>22222</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>电话</li>
+										<li>33333</li>
+										<li>33333</li>
+										<li>33333</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>操作</li>
+										<li>
+											<a>修改</a>
+											<a>删除</a>
+											<a>功能1</a>
+										</li>
+										<li>
+											<a>修改</a>
+											<a>删除</a>
+											<a>功能1</a>
+										</li>
+										<li>
+											<a>修改</a>
+											<a>删除</a>
+											<a>功能1</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<a class="firstPage">首页</a>
+							<a>上一页</a>
+							<a>1</a>
+							<a>2</a>
+							<a>下一页</a>
+							<a>尾页</a>
+						</div>
+					</div-->
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/echarts.min.js"></script>
+		<script>
+			var option = {
+				tooltip:{
+					 formatter:'{b}:{c}: ({d}%)'　
+				},
+			   title:{text:""},
+			   series:[
+				 {name:"",
+				   type:"pie",
+				   radius:"60%",
+				   data:[
+					 {value:800,name:"抢劫"},
+					 {value:700,name:"偷盗"},
+					 {value:600,name:"诈骗"},
+					 {value:500,name:"绑架"},
+					 {value:400,name:"纵火"},
+					 {value:300,name:"诱拐儿童"},
+					 {value:300,name:"其他"}
+				   ]}
+			   ]
+			 };
+			 //2:初始化实例
+			 var myChart = echarts.init(box);
+			 //3:使用配置参数显示图片
+			 myChart.setOption(option);
+		</script>
+	</body>
+ </body>
+</html>

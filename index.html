@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/article.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>三维实景可视化管理系统</title>
+</head>
+<body>
+	<div style="display:inline-block;position:absolute;right:5em;top:2em;z-index:101" id="user">欢迎用户:</div>
+	<div class="isLogin">
+		<div>
+			<h1>请先登陆!</h1>
+			<h1>3秒后跳转到登陆页面!</h1>
+		</div>
+	</div>
+	<div class="uploadFile notShow">
+		<div>
+			<a>X关闭</a>
+			<h2>文件上传</h2>
+			<p><span style="font-size:1.1em">项目文件标题：</span><input type="text" id="filename" placeholder="请输入"></p>
+			<p><span style="font-size:1.1em">项目文件介绍：</span><input type="text" id="fileintr" placeholder="请输入"></p>
+			<p><span style="font-size:1.1em">项目所在省份：</span><input type="text" id="filepro" placeholder="请输入"></p>
+			<p><span style="font-size:1.1em">项目所在城市：</span><input type="text" id="filecity" placeholder="请输入"></p>
+			<input type="file" name="mydata" id="myfile" class="notShow">
+			<input type="file" name="mydata" id="img" class="notShow">
+			<p>
+				<label for="myfile">选择文件</label>
+				<span style="font-size:1.1em">已选中文件：</span><span id="fileChoseName" style="color:red">没有选择文件</span>
+			</p>
+			<p>
+				<label for="img">选择图片</label>
+				<span style="font-size:1.1em">已选中图片：</span><span id="myimg" style="color:red">没有选择图片</span>
+			</p>
+			<button id="shangchuan">上传</button>
+			<div class="uploadOk notShow">
+				<h2>上传成功！</h2>
+			</div>
+			<div class="uploadErr notShow">
+				<h2>上传失败！</h2>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div>
+			<img src="./images/logo.png" alt="三维实景复制与可视化管理系统">
+		</div>
+		<ul class='myHeaderUl text-left'>
+			<li><a class='goIndex' href="#">首页</a></li>
+			<li>
+				<a class='lider'>111111<span class='caret'></span></a>
+				<ul class=''>
+					<li><a href='#'>111111</a></li>
+					<li><a href='#'>111111</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='lider'>帮助中心<span class='caret'></span></a>
+				<ul class=''>
+					<li><a href='#'>222222</a></li>
+					<li><a href='#'>222222</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='lider'>用户中心<span class='caret'></span></a>
+				<ul class=''>
+					<li><a href=''>333333</a></li>
+					<li><a href='#'>333333</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='lider'>背景设置<span class='caret'></span></a>
+				<ul class='backgoundColor'>
+					<li class="blackColor"><a href='#'>纯黑色</a></li>
+					<li class="whiteColor"><a href='#'>纯白色</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="policeInformation.html">后台管理</a>
+			</li>
+			<li id="uploadData">
+				<a href="">文件上传</a>
+			</li>
+
+			<li style="float:right">
+				<input type='text' id="searchInput"><a href='' id="searchClick">搜索</a>
+			</li>
+		</ul>
+	</header>
+	<ul style="list-style:none; position:fixed;top:30%;left:1em;" id="wode">
+		<li style="padding:.9em 1.9em;background:#F0AD4E;border-radius:2px;font-size:18px;">功能1</li>
+		<li style="padding:.9em 1.9em;background:#D9534F;border-radius:2px;font-size:18px;">功能2</li>
+		<li style="padding:.9em 1.9em;background:#F2DEDE;border-radius:2px;font-size:18px;">功能3</li>
+		<li style="padding:.9em 1.9em;background:#5CB85C;border-radius:2px;font-size:18px;">功能4</li>
+		<li style="padding:.9em 1.9em;background:#1F5062;border-radius:2px;font-size:18px;">功能5</li>
+		<li style="padding:.9em 1.9em;background:#AFB2B2;border-radius:2px;font-size:18px;"><a>更多</a></li>
+	</ul>
+	<section>
+		<div id="sectionSele">
+			<span>项目所在城市：</span><input type="text" placeholder="请输入城市名称" id="sectionSearch"/>
+			<span>项目选择：</span>
+			<select name="sel" id="projectSlect">
+					<option selected class='opt'>请选择案件</option>
+			</select>
+			<button class="goIndex" style="outline:none;">取消查找</button>
+		</div>
+		<div class="section"></div>
+		<!--<div style="text-align:center;margin:2em 0;">
+			<span>省份</span><input type="text" placeholder="项目所属省份">
+			<span>城市</span><select>
+					<option>该省份没有项目</option>
+					<option>城市1</option>
+					<option>城市2</option>
+					<option>城市3</option>
+					<option>城市4</option>
+				</select>
+			<span>项目名称</span><select>
+					<option>无</option>
+					<option>项目1</option>
+					<option>项目2</option>
+					<option>项目3</option>
+					<option>项目4</option>
+				</select>
+		</div>
+		<div class="container" style="position:relative;left:4%">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw5.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-primary">标题</h3>
+							<p class="text-muted">介绍</p>
+							<p><a href="#" class="btn btn-warning" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/aa.PNG" alt="...">
+						<div class="caption">
+							<h3 class="bg-success">标题</h3>
+							<p class="text-primary">介绍</p>
+							<p><a href="#" class="btn btn-danger" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw1.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-info">标题</h3>
+							<p class="text-success">介绍</p>
+							<p><a href="#" class="btn btn-primary" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<!--第二行-->
+			<!--<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw2.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-warning">标题</h3>
+							<p class="text-info">介绍</p>
+							<p><a href="#" class="btn btn-primary" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw3.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-danger">标题</h3>
+							<p class="text-warning">介绍</p>
+							<p><a href="#" class="btn btn-primary" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw4.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-primary">标题</h3>
+							<p class="text-danger">介绍</p>
+							<p><a href="#" class="btn btn-success" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<!--第三行-->
+			<!--<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/tw6.png" alt="...">
+						<div class="caption">
+							<h3 class="bg-primary">标题</h3>
+							<p class="text-muted">介绍</p>
+							<p><a href="#" class="btn btn-success" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/aa.PNG" alt="...">
+						<div class="caption">
+							<h3 class="bg-primary">标题</h3>
+							<p class="text-muted">介绍</p>
+							<p><a href="#" class="btn btn-info" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/aa.PNG" alt="...">
+						<div class="caption">
+							<h3 class="bg-primary">标题</h3>
+							<p class="text-muted">介绍</p>
+							<p><a href="#" class="btn btn-info" role="button">三维实景展示</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<div style="margin-bottom:-10%;" id="statistics">
+			<h3 class="indexTitle"><span class='glyphicon glyphicon-tag'></span>项目分类统计展示：</h3>
+			<div id="box" style="width:80%;height:30em;"></div>
+		</div>
+	</section>
+	<footer>
+		<h3 class="indexTitle"><span class='glyphicon glyphicon-pencil'></span>留言：</h3>
+		<textarea rows="7" placeholder="请输入您所遇到的问题或建议！" id="theMessage"></textarea>
+		<button id="leaveMessage">提交</button>
+	</footer>
+	<article>
+		<p>
+			Copyright © 2017
+		</p>
+	</article>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script>
+		//1:指定图形配置参数
+     var option = {
+       //title:{text:"案件分类统计数据"},
+       tooltip:{},
+       legend:{data:["数据源来自网络"]},
+       xAxis:{data:["项目类1","项目类2","项目类3","项目类4","项目类5","项目类6","项目类7","其他"]},
+       yAxis:{},
+	   itemStyle: {
+		normal:{color:"#1A343B"}//#616A6B
+	   },
+       series:[
+         {name:"项目数量",type:"bar",data:[800,700,600,500,400,300,200,100]}
+       ]
+     };
+     //2:初始化实例
+     var myChart = echarts.init(box);
+     //3:使用配置参数显示图片
+     myChart.setOption(option);
+	</script>
+</body>
+</html>

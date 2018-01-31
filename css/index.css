@@ -1,0 +1,256 @@
+a{
+	text-decoration:none !important;
+	outline: none !impotant;
+	cursor:pointer;
+}
+h3.indexTitle{
+display:block;
+	font-size:1.5em;
+	text-align:left;
+	margin:2em 0;
+	margin-left:12%;
+	width:84%;
+	padding:.7em 0;
+	color: #333333;
+    font-weight: bold;
+	box-shadow: 3px 3px 6px #ccc;
+	background: -moz-linear-gradient(top, #eff0f0 0%, #e0dfe0 100%);
+    background: -webkit-linear-gradient(top, #eff0f0 0%, #e0dfe0 100%);
+    background: -o-linear-gradient(top, #eff0f0 0%, #e0dfe0 100%);
+    background: -ms-linear-gradient(top, #eff0f0 0%, #e0dfe0 100%);
+}
+body{
+	padding-top:2em;
+	margin-top:0;
+	overflow-x:hidden;
+  }
+  /*如果不需要显示的就addClass("notShow")*/
+.notShow{
+		display:none !important;
+	}
+/*section img{
+		transition:all linear .5s;
+	}
+section img:hover{
+		transform:scale(1.05);
+	}*/
+section{margin-top:160px;}
+.section,#sectionSele{
+	
+}
+#sectionSele{
+	box-sizing:border-box;
+	text-align:center;
+	margin:1em auto;
+	background:#E3E3E3;
+	padding:3em;
+	width:84%;
+	border-radius:3px;
+	position:relative;
+	left:4%;
+}
+
+#sectionSele input,#sectionSele select,#sectionSele .opt{
+	display:inline-block;
+	text-indent:1.5em;
+	width:20%;
+	padding:.4em;
+	border-radius:2em;
+	border:none;
+	outline:none;
+}
+#sectionSele span,#sectionSele button{
+	font-size:1.3em;
+}
+#sectionSele button{
+	color:black;
+	background:white;
+	border:1px solid black;
+	border-radius:2em;
+	margin-left:2em;
+	padding:.6em 1.2em;
+	transition:all .3s linear;
+}
+#sectionSele button:hover{
+	color:white;
+	background:black;
+	border:1px solid white;
+}
+		/*判断是否登陆界面显示*/
+
+.uploadFile,.isLogin{
+			width:100%;
+			height:100%;
+			position:fixed;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			background:rgba(90,88,88,0.9);
+			z-index:101;
+		}
+.isLogin>div,.uploadFile>div{
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+		}
+.isLogin h1{
+			text-align:center;color:#D8362C;
+		}
+
+		/*上传文件界面显示*/
+.uploadFile>div{
+			background:#F5FBFF;
+			padding:5em 12em;
+			border-radius:1em;
+		}
+.uploadFile>div>div{
+			background:rgba(116,176,200,0.9);
+			padding:10em 15em;
+			width:600px;
+			height:315px;
+			border-radius:1em;
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			overflow:hidden;
+		}
+.uploadFile input{
+			border:1px solid orange;
+			display:inline-block;
+			margin:1em 0;
+			line-height:2em;
+			border-radius:3px;
+			padding:0.1em;
+		}
+.uploadFile h2{
+			margin:0 auto;
+			text-align:center;
+			min-width:6em;
+		}
+.uploadFile label,button{
+			border:none;
+			text-align:center;
+			border-radius:0.5em;
+			display:inline-block;
+			margin:0 auto;
+
+		}
+.uploadFile button{
+			position:absolute;
+			left:80%;
+			top:90%;
+			background:#3F89EC;
+			padding:1em 1.5em;
+			color:white;
+		}
+.uploadFile label{
+			background:#E96F1D;
+			padding:0.7em 1em;
+			margin-top:1em;
+		}
+.uploadFile label:hover{
+			cursor:pointer;
+			background:#C92027;
+		}
+.uploadFile a{
+			position:absolute;
+			left:85%;
+			top:0;
+			cursor:pointer;
+			padding:1em 1.5em;
+		}
+
+		/*具体单个项目样式*/
+.thumbnail h4{
+			text-align:center;
+		}
+.thumbnail{
+			padding-top:1.5em;
+		}
+section .row>div>div p{
+			text-align:right;
+			position:relative;
+			top:85%;
+		}
+section .row>div{
+	overflow:hidden;
+}
+section .row>div>div:first-child{
+	position:absolute;
+	transition:all .3s linear;
+	bottom:-100%;
+	width:92%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	border-radius:3px;
+	z-index:101;
+}
+section .row>div:hover div:first-child{
+	bottom:0;
+}
+section .row>div>div span{
+			display:inline-block;
+			position:absolute;
+			color:white;
+			padding:2em;
+			top:40%;
+			left:50%;
+			transform:translate(-50%,-50%);
+}
+section .row>div>div p a{
+	font-size: 16px;
+	margin-right:.6em;
+    padding: .7em 1.5em;
+	text-decoration:none;	 
+	cursor:pointer;
+	border-width: 1px;
+	border-color:rgb(255, 255, 255);
+	background:rgb(255, 255, 255);
+	color:rgb(0, 0, 0);
+	border-radius:4px;
+	transition:all .2s linear;
+}
+section .row>div>div p a:hover{
+	border-color:rgb(255, 255, 255);
+	background:#E8580A;
+	color:rgb(255, 255, 255);
+}
+section .row>div>div:first-child:before,
+section .row>div>div:first-child:after {
+			position: absolute;
+			top: 1em;
+			right: 1.5em;
+			bottom:5em;
+			left: 1.5em;
+			content: '';
+			opacity: 0;
+			-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+			transition: opacity 0.8s, transform 0.8s;
+}
+section .row>div>div:first-child::before {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			-webkit-transform: scale(0,1);
+			background:rgba(0,0,0,0.7);/*文字显示背景*/
+			transform: scale(0,1);
+		}
+section .row>div>div:first-child::after {
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+			-webkit-transform: scale(1,0);
+			transform: scale(1,0);
+}
+section .row>div:hover div:first-child::before,
+section .row>div:hover div:first-child::after {
+			opacity: 1;                                      /* 中间线条*/
+			-webkit-transform: scale(1);
+			transform: scale(1);
+}
+#box{
+	display:inline-block;
+	margin:0;
+	margin-left:56%;
+	transform:translate(-50%,-10%);
+}

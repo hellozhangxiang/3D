@@ -1,0 +1,66 @@
+ .myHeaderUl>li{
+	position:relative;
+	border-bottom:1px solid transparent;
+	height:4em;
+
+	display:inline-block;
+  }
+	.myHeaderUl li>a{
+		display:inline-block;
+		padding:1.3em 2.5em;
+		 color: white;
+	}
+	.myHeaderUl>li:nth-child(8) a{
+		padding-left:.8em;
+	}
+	.myHeaderUl>li:nth-child(8) a:hover{
+		color:#E8580A;
+	}
+	.myHeaderUl>li:first-child:hover,.myHeaderUl>li:nth-child(6):hover,.myHeaderUl>li:nth-child(7):hover{
+		background:#E8580A;
+	}
+
+	.myHeaderUl li:last-child:hover{
+		/*background:#5d5959 !important;*/
+	}
+	.myHeaderUl{
+		background:black;
+		list-style:none;
+		display:block;
+		padding:0;
+		border-radius:0.2em;
+		font-size:1.1em;
+		}
+	.myHeaderUl>li>ul{
+		text-align:center;
+		list-style-type: none;
+		position:absolute;
+		display:block;
+		height:0;/*inherit;*/
+		width:100%;
+		background:black;
+		overflow:hidden;
+		transition:all .3s linear;
+	}
+	.myHeaderUl>li>ul>li{
+		position:relative;
+		display:block;
+		width:100%;	
+	}
+	*{
+		margin:0;padding:0;
+		font-family: 微软雅黑;
+	}
+	
+	header{
+			text-align:center;
+			width:100%;
+			margin-bottom:0;
+			z-index:100;
+			position:absolute;
+			top:0;
+			margin:0 auto;
+			background:white;
+			
+		}
+		
